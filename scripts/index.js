@@ -129,6 +129,3 @@ line4.animate({
         },
         duration: 2000
 });*/
-
-alert($(window).width() + "x" + $(window).height());
-console.log($(window).width() + "x" + $(window).height());
