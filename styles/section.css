@@ -24,6 +24,7 @@ body{
 }
 
 .section-content{
+    width: 100%;
     vertical-align: middle;
     line-height: initial;
     display: inline-block;
@@ -214,6 +215,27 @@ p, ol, ul{
 
 .prev .hack-table{
     animation: none;
+}
+
+.contact-card{
+    text-align: left;
+    display: inline-block;
+    margin: 30px 30px;
+    width: 300px;
+}
+
+.contact-card p{
+    margin-bottom: 0rem;
+}
+
+@media only screen and (max-width:600px){
+    .contact-card{
+        margin: 10px auto;
+    }
+
+    .contact-card p{
+        line-height: 20px;
+    }
 }
 
 
