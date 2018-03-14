@@ -52,7 +52,7 @@ h1{
     letter-spacing: 6px;
 }
 
-p{
+p, ol, ul{
     transition: transform 0.4s ease-out 1.6s, opacity 0.5s ease-out 1.6s;
     font-family: Ubuntu;
     font-size: 1rem;
@@ -76,12 +76,12 @@ p{
     transition: opacity 0.4s ease-out 2s;
 }
 
-.next h1, .next h2, .next h3, .next h4, .next h5, .next p{
+.next h1, .next h2, .next h3, .next h4, .next h5, .next p, .next ol, .next ul{
     transform: translateY(100%);
     opacity: 0;
 }
 
-.prev h1, .prev h2, .prev h3, .prev h4, .prev h5, .prev p{
+.prev h1, .prev h2, .prev h3, .prev h4, .prev h5, .prev p, .prev ol, .prev ul{
     transform: translateY(-100%);
     opacity: 0;
 }
@@ -147,18 +147,31 @@ p{
 }
 
 .step-desc{
+    vertical-align: middle;
+    width: 65%;
     display: inline-block;
+    text-align: left;
+    margin-left: 4%;
+}
+
+.step-desc p{
+    margin-top: 20px;
+    line-height: 2rem;
 }
 
 .form-team{
-    height: 300px;
-    width: auto;
+    vertical-align: middle;
+    width: 30%;
+    /* height: 300px; */
+    height: auto;
     animation: team-revolve 10s linear infinite;
 }
 
 .submit-abstract{
-    height: 300px;
-    width: auto;
+    vertical-align: middle;
+    width: 30%;
+    /* height: 300px; */
+    height: auto;
     animation: abstract-bob 4s linear infinite;
 }
 
@@ -187,6 +200,20 @@ p{
         height: auto;
         vertical-align: top;
     }
+}
+
+.hack-table{
+    width:100%;
+    height: auto;
+    animation: table-spin 2s ease-in-out 1;
+}
+
+.next .hack-table{
+    animation: none;
+}
+
+.prev .hack-table{
+    animation: none;
 }
 
 
@@ -220,5 +247,15 @@ p{
     }
     100%{
         transform: translateY(0px);
+    }
+}
+
+@keyframes table-spin{
+    0%{
+        transform: scale(0) rotate(1800deg);
+    }
+
+    100%{
+        transform: scale(1) rotate(0deg);
     }
 }
