@@ -7,6 +7,7 @@ body{
 #fullpage{
     position: relative;
     width: 100%;
+    height: 100vh;
 }
 
 #sections-container{
@@ -28,6 +29,28 @@ body{
     vertical-align: middle;
     line-height: initial;
     display: inline-block;
+}
+
+@media only screen and (max-width:600px){
+    body{
+        overflow: auto;
+    }
+
+    #fullpage{
+        height: auto;
+    }
+
+    #sections-container{
+        position: relative;
+    }
+
+    .section{
+        height: auto;
+    }
+
+    .section-content{
+        height: auto;
+    }
 }
 
 img{
@@ -57,9 +80,15 @@ p, ol, ul{
     transition: transform 0.4s ease-out 1.6s, opacity 0.5s ease-out 1.6s;
     font-family: Ubuntu;
     font-size: 1rem;
-    font-size: 14px;
     letter-spacing: 0.1px;
     line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 600px){
+    p, ol, ul{
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+    }
 }
 
 .button{
@@ -206,7 +235,7 @@ p, ol, ul{
 .hack-table{
     width:100%;
     height: auto;
-    animation: table-spin 2s ease-in-out 1;
+    animation: table-swing 4s ease-in-out infinite;
 }
 
 .next .hack-table{
@@ -279,5 +308,27 @@ p, ol, ul{
 
     100%{
         transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes table-swing{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(-15deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .next h1, .next h2, .next h3, .next h4, .next h5, .next p, .next ol, .next ul, .prev h1, .prev h2, .prev h3, .prev h4, .prev h5, .prev p, .prev ol, .prev ul, .next .button, .prev .button, .next img, .prev img{
+        transform: none;
+        opacity: 1;
     }
 }

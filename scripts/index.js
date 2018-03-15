@@ -17,10 +17,32 @@ eg:- Lets move to section 2. Use this statement
         fullpageObj.move
 */
 
+var isMobile = {
+        Android: function() {
+                return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+                return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+};
 
 var fullpage = $("#fullpage");
 var delay = 500;
-var fullpageObj = new FullPage(fullpage, delay);        //FullPage object.... Add all transition functions to this object
+if(!isMobile.any()){
+        var fullpageObj = new FullPage(fullpage, delay);        //FullPage object.... Add all transition functions to this object
+}
 
 $(".section-arrow").click(()=>{
         fullpageObj.nextSection();
@@ -41,25 +63,6 @@ fullpageObj.setTransition("2-1", protoFunc2);*/
 
 
 /* Page Animations */
-$(".winner-know-more").click( (event)=>{
-        var section = $(event.target).parent().parent();
-        var winnerDisplay = $(event.target).parent();
-        section.children().removeClass("col-md-3");
-        section.children().addClass("col-md-2");
-        winnerDisplay.removeClass("col-md-2");
-        winnerDisplay.addClass("col-md-6");
-        winnerDisplay.find(".winner-know-more").css("display", "none");
-        winnerDisplay.find(".winner-close").css("display", "block");
-});
-
-$(".winner-close").click( (event)=>{
-        var section = $(event.target).parent().parent();
-        var winnerDisplay = $(event.target).parent();
-        section.children().removeClass("col-md-2 col-md-6");
-        section.children().addClass("col-md-3");
-        winnerDisplay.find(".winner-know-more").css("display", "block");
-        winnerDisplay.find(".winner-close").css("display", "none");
-});
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 /*particlesJS.load('particles-js-0', '../assets/particles-0.json', function() {
