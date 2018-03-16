@@ -17,6 +17,14 @@ body{
     width: 100%;
 }
 
+.animation-overlay{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
 .section{
     width: 100%;
     height: 100vh;
