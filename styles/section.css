@@ -202,7 +202,7 @@ p, ol, ul{
     width: 30%;
     /* height: 300px; */
     height: auto;
-    animation: abstract-bob 4s linear infinite;
+    /*animation: abstract-bob 4s linear infinite;*/
 }
 
 @media only screen and (max-width: 600px){
