@@ -61,7 +61,7 @@ body{
     }
 }
 
-img{
+img, object{
     transition: opacity 0.4s ease-out 0.8s;
 }
 
@@ -128,7 +128,7 @@ p, ol, ul{
     opacity: 0;
 }
 
-.next img, .prev img{
+.next img, .prev img, .next object, .prev object{
     opacity: 0;
 }
 
@@ -207,9 +207,8 @@ p, ol, ul{
 
 .submit-abstract{
     vertical-align: middle;
-    width: 30%;
-    /* height: 300px; */
-    height: auto;
+    max-width: 30%;
+    max-height: 220px;
     /*animation: abstract-bob 4s linear infinite;*/
 }
 
@@ -243,15 +242,7 @@ p, ol, ul{
 .hack-table{
     width:100%;
     height: auto;
-    animation: table-swing 4s ease-in-out infinite;
-}
-
-.next .hack-table{
-    animation: none;
-}
-
-.prev .hack-table{
-    animation: none;
+    /* animation: table-swing 4s ease-in-out infinite; */
 }
 
 .contact-card{
@@ -335,7 +326,7 @@ p, ol, ul{
 
 @media only screen and (max-width: 600px){
 
-    .next h1, .next h2, .next h3, .next h4, .next h5, .next p, .next ol, .next ul, .prev h1, .prev h2, .prev h3, .prev h4, .prev h5, .prev p, .prev ol, .prev ul, .next .button, .prev .button, .next img, .prev img{
+    .next h1, .next h2, .next h3, .next h4, .next h5, .next p, .next ol, .next ul, .prev h1, .prev h2, .prev h3, .prev h4, .prev h5, .prev p, .prev ol, .prev ul, .next .button, .prev .button, .next img, .prev img, .next object, .prev object{
         transform: none;
         opacity: 1;
     }
