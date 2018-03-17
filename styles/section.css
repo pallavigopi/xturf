@@ -212,28 +212,39 @@ p, ol, ul{
     /*animation: abstract-bob 4s linear infinite;*/
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 
+    .steps-container{
+        margin: 0vh;
+    }
+    
     .step-container{
         width: 90%;
         text-align: left;
         vertical-align: top;
-        margin: 20px auto;
+        margin: 2vh auto;
+    }
+
+    .step-container p{
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     .step-desc{
-        width: 65%;
+        width: 75%;
         margin-left: 2%;
     }
 
     .form-team{
-        width: 30%;
+        max-width: 20%;
+        width: 150px;
         height: auto;
         vertical-align: top;
     }
 
     .submit-abstract{
-        width: 30%;
+        max-width: 20%;
+        width: 150px;
         height: auto;
         vertical-align: top;
     }
@@ -243,6 +254,12 @@ p, ol, ul{
     width:100%;
     height: auto;
     /* animation: table-swing 4s ease-in-out infinite; */
+}
+
+.roller-coaster{
+    display: block;
+    max-width: 100%;
+    margin-top: 10vh;
 }
 
 .contact-card{
