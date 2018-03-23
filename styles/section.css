@@ -95,7 +95,7 @@ p, ol, ul{
 @media only screen and (max-width: 600px){
     p, ol, ul{
         font-size: 1.5rem;
-        line-height: 1.6rem;
+        line-height: 2rem;
     }
 }
 
@@ -170,6 +170,11 @@ p, ol, ul{
         width: 92%;
         margin: 0% 4%;
     }
+
+    .ibeto-desc p{
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
 }
 
 .steps-container{
@@ -194,7 +199,6 @@ p, ol, ul{
 
 .step-desc p{
     margin-top: 20px;
-    line-height: 2rem;
 }
 
 .form-team{
@@ -256,16 +260,60 @@ p, ol, ul{
     /* animation: table-swing 4s ease-in-out infinite; */
 }
 
+@media only screen and (max-width: 600px){
+
+    .ibeto-desc ul{
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+}
+
+
 .roller-coaster{
     display: block;
     max-width: 100%;
     margin-top: 10vh;
 }
 
+.mobile-schedule{
+    text-align: left;
+    display: none;
+}
+
+.schedule-date{
+    display: inline-block;
+    width: 200px;
+}
+
+.schedule-date .fas, .schedule-date .far{
+    color: #00c871;
+    margin-right: 10px;
+}
+
+.schedule-desc{
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px){
+
+    .roller-coaster{
+        display: none;
+    }
+
+    .mobile-schedule{
+        display: inline-block;
+    }
+}
+
 .coming-soon{
     border: none;
     font-size: 100px;
     font-family:Fredericka the Great;
+    transition: opacity 0.4s ease-out 0.8s;
+}
+
+.next .coming-soon, .prev .coming-soon{
+    opacity: 0;
 }
 
 .coming-soon a{
@@ -306,10 +354,6 @@ p, ol, ul{
     .contact-card{
         margin: 30px auto;
         width: 100%;
-    }
-
-    .contact-card p{
-        line-height: 20px;
     }
 }
 
@@ -388,7 +432,7 @@ p, ol, ul{
 
 @media only screen and (max-width: 600px){
 
-    .next h1, .next h2, .next h3, .next h4, .next h5, .next p, .next ol, .next ul, .prev h1, .prev h2, .prev h3, .prev h4, .prev h5, .prev p, .prev ol, .prev ul, .next .button, .prev .button, .next img, .prev img, .next object, .prev object{
+    .next h1, .next h2, .next h3, .next h4, .next h5, .next p, .next ol, .next ul, .prev h1, .prev h2, .prev h3, .prev h4, .prev h5, .prev p, .prev ol, .prev ul, .next .button, .prev .button, .next img, .prev img, .next object, .prev object, .next .coming-soon, .prev .coming-soon{
         transform: none;
         opacity: 1;
     }

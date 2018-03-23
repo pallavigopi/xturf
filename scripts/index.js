@@ -81,54 +81,19 @@ particlesJS.load('particles-js-3', '../assets/particles-1.json', function() {
         console.log('callback - particles.js config loaded');
 });*/
 
-var svg = $("#svg-canvas");
-var height = svg.height();
-var width = svg.width();
-var line1 = $("#line-1");
-var line2 = $("#line-2");
-var line3 = $("#line-3");
-var line4 = $("#line-4");
-/*line1.attr("x2",width);
-line2.attr("y2",height);
-line3.attr("y1",height);
-line3.attr("x2",width);
-line3.attr("y2",height);
-line4.attr("x1",width);
-line4.attr("x2",width);
-line4.attr("y2",height);
-
-line1.animate({
-        'foo': height/5},{
-        step: function(foo){
-                $(this).attr('y1', foo);
-                $(this).attr('y2', foo);
-        },
-        duration: 2000
-});
-
-line2.animate({
-        'foo': width/10},{
-        step: function(foo){
-                $(this).attr('x1', foo);
-                $(this).attr('x2', foo);
-        },
-        duration: 2000
-});
-
-line3.animate({
-        'foo': 4*height/5},{
-        step: function(foo){
-                $(this).attr('y1', foo);
-                $(this).attr('y2', foo);
-        },
-        duration: 2000
-});
-
-line4.animate({
-        'foo': 9*width/10},{
-        step: function(foo){
-                $(this).attr('x1', foo);
-                $(this).attr('x2', foo);
-        },
-        duration: 2000
-});*/
+var dates = $(".schedule-date");
+var upcoming = true;
+for(var i=0 ; i<dates.length ; i++){
+        var dateobj = $(dates[i]);
+        var curdate = new Date();
+        var date = new Date(dateobj.attr("data-date"));
+        if(date>curdate && upcoming){
+                dateobj.find(".fas").remove();
+                dateobj.find(".far").removeClass("far").addClass("fas");
+                upcoming = false;
+        }
+        else if(date>curdate)
+                dateobj.find(".fas").remove();
+        else
+                dateobj.find(".far").remove();
+}
