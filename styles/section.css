@@ -39,7 +39,7 @@ body{
 
 .section-1{
     background: #151515;
-    color: #B0B0B0;
+    color: #FFFFFF;
 }
 
 .section-content{
@@ -67,6 +67,10 @@ body{
         padding-top: 50px;
         padding-bottom: 50px;
         min-height: calc(100vh - 100px);
+    }
+
+    .section-1{
+        color: #B0B0B0;
     }
 
     .section-content{
