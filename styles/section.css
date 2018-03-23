@@ -278,6 +278,8 @@ p, ol, ul{
 .mobile-schedule{
     text-align: left;
     display: none;
+    width: 500px;
+    margin: auto;
 }
 
 .schedule-date{
@@ -287,7 +289,7 @@ p, ol, ul{
 
 .schedule-date .fas, .schedule-date .far{
     color: #00c871;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .schedule-desc{
@@ -301,7 +303,7 @@ p, ol, ul{
     }
 
     .mobile-schedule{
-        display: inline-block;
+        display: block;
     }
 }
 
