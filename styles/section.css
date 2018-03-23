@@ -32,6 +32,16 @@ body{
     text-align: center;
 }
 
+.section-0{
+    background:#F0FFFF;
+    color: #000000;
+}
+
+.section-1{
+    background: #151515;
+    color: #B0B0B0;
+}
+
 .section-content{
     width: 100%;
     vertical-align: middle;
@@ -54,6 +64,9 @@ body{
 
     .section{
         height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        min-height: calc(100vh - 100px);
     }
 
     .section-content{
@@ -284,7 +297,7 @@ p, ol, ul{
 
 .schedule-date{
     display: inline-block;
-    width: 200px;
+    width: 150px;
 }
 
 .schedule-date .fas, .schedule-date .far{
