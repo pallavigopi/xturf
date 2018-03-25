@@ -343,7 +343,7 @@ p, ol, ul{
 .contact-card{
     text-align: left;
     display: inline-block;
-    margin: 30px 30px;
+    margin: 30px 0px;
 }
 
 .contact-card p{
@@ -363,6 +363,17 @@ p, ol, ul{
 .contact-dets{
     display: inline-block;
     vertical-align: middle;
+}
+
+.contact-mail, .contact-tel{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.5s;
+}
+
+.contact-mail:hover, .contact-tel:hover{
+    color: #007bff;
+    text-decoration: none;
 }
 
 .footer{
