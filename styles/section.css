@@ -341,13 +341,18 @@ p, ol, ul{
 }
 
 .contact-cards-group{
-    display: inline-block;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .contact-card{
     text-align: left;
     display: inline-block;
-    margin: 30px 0px;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 470px;
 }
 
 .contact-card p{
