@@ -11,9 +11,8 @@
 	<meta name="robots" content="index, follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		html, body { margin:0; padding:0; overflow:hidden; }
-		body { opacity: 0; }
-		.anim-svg { position:fixed; top:0; left:0; height:100%; width:100%;}
+		html, body { margin:0; padding:0; overflow:hidden;}
+		.anim-svg { position:fixed; top:0; left:0; height:100%; width:100%; opacity: 0; }
 	</style>
 </head>
 <body style="text-align:center; margin-top:50px">
@@ -22,10 +21,6 @@
 	<script type="text/javascript" src="TweenMax.min.js"></script>
 	<script type="text/javascript" src="CustomEase.js"></script>
 	<script type="text/javascript" src="MorphSVGPlugin.min.js"></script>
-
-	<img class="logo excel-logo" src="excel-logo.png" style="position:absolute; left:2%; top:2%;">
-	<img class="logo mec-logo" src="mec-logo.png" style="position:absolute; right:2%; top:2%;">
-
 
 	
 	<svg class="anim-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px"
@@ -63,7 +58,6 @@
 	.small-text{fill:#FFFFFF;}
 	.bulb{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
 	.hide-box{fill:url(#hide-box_1_);}
-	.down-arrows{fill:#010101; opacity: 0.3;}
 
 	/*logo styles*/
 	.lst0{clip-path:url(#SVGID_2_);fill:url(#SVGID_3_);}
@@ -104,10 +98,10 @@
 	<text transform="matrix(1 0 0 1 403.2656 113)" class="suggested-fg minute-text st11 st0 st16">Every Minute...</text>
 </g>
 <g id="Scene2">
-	<text transform="matrix(1 0 0 1 483.084 113)" class="day-text st11 st0 st16">Day</text>
+	<text transform="matrix(1 0 0 1 480.2471 113)" class="day-text st11 st0 st16">Day.</text>
 </g>
 <g id="Scene3">
-	<text transform="matrix(1 0 0 1 437.5054 113)" class="night-text st7 st0 st16">And Night</text>
+	<text transform="matrix(1 0 0 1 433.7539 113)" class="night-text st7 st0 st16">And Night.</text>
 	<g class="stars">
 		<polygon class="st5" points="799.437,569.466 795.446,565.882 790.231,567.138 792.407,562.234 789.602,557.663 794.937,558.217 
 			798.417,554.137 799.539,559.382 804.495,561.431 799.854,564.118 		"/>
@@ -371,7 +365,7 @@
 	<text transform="matrix(1 0 0 1 594.8506 394.2285)" class="happen-text st11 st10 st16 st12">happen.</text>
 </g>
 <g id="Scene13">
-	<text transform="matrix(1 0 0 1 339.2734 244.5977)" class="turn-text st11 st0 st16 st12">For now, it’s your turn</text>
+	<text transform="matrix(1 0 0 1 339.2734 244.5977)" class="turn-text st11 st0 st16 st12">For now it’s your turn</text>
 
 	<text transform="matrix(1 0 0 1 401.3145 361.2305)" class="lets-text st11 st0 st16 st12">Let’s</text>
 	<text transform="matrix(1 0 0 1 484.3462 361.2305)" class="inspire-text st11 st0 st16 st12">Inspire</text>
@@ -383,11 +377,49 @@
 	<text transform="matrix(1 0 0 1 407.3833 394.2285)" class="tomorrow-text st11 st0 st16 st12">for a better tomorrow.</text>
 </g>
 <g id="Scene15">
-	
-	<g class="down-arrows">
-		<polygon points="454.316,623.011 512,679.069 569.887,623.011 572.934,624.839 512,683.944 451.066,624.839 		"/>
-		<polygon points="454.316,666.621 512,722.68 569.887,666.621 572.934,668.449 512,727.555 451.066,668.449 		"/>
-	</g>
+	<path class="i-char st11" d="M471.423,393.715H470.5v-24.883h0.923V393.715z"/>
+	<path class="b-char st11" d="M494.325,385.154c0,1.412-0.157,2.697-0.47,3.854s-0.766,2.147-1.358,2.974
+		c-0.593,0.826-1.319,1.464-2.179,1.914c-0.861,0.449-1.837,0.675-2.931,0.675c-0.764,0-1.467-0.083-2.111-0.248
+		s-1.228-0.393-1.751-0.684c-0.524-0.29-0.991-0.635-1.401-1.033c-0.41-0.399-0.758-0.832-1.042-1.299v2.922h-0.923v-26.25h0.923
+		v11.125c0.296-0.558,0.646-1.064,1.051-1.521c0.404-0.455,0.869-0.846,1.393-1.171c0.524-0.324,1.105-0.575,1.743-0.752
+		c0.638-0.176,1.333-0.265,2.085-0.265c1.094,0,2.073,0.217,2.939,0.649c0.866,0.434,1.598,1.054,2.196,1.863
+		c0.599,0.809,1.054,1.794,1.367,2.956s0.47,2.473,0.47,3.931V385.154z M493.368,384.795c0-1.23-0.123-2.364-0.368-3.4
+		c-0.245-1.037-0.615-1.932-1.11-2.684c-0.496-0.752-1.12-1.339-1.872-1.76c-0.752-0.422-1.635-0.633-2.649-0.633
+		c-0.991,0-1.846,0.146-2.563,0.436c-0.718,0.291-1.324,0.667-1.82,1.128c-0.495,0.462-0.895,0.972-1.196,1.53
+		c-0.302,0.558-0.538,1.11-0.709,1.657v8.477c0.216,0.581,0.507,1.122,0.872,1.624c0.364,0.501,0.806,0.937,1.325,1.307
+		c0.518,0.371,1.122,0.658,1.812,0.863c0.689,0.205,1.461,0.308,2.315,0.308c1.002,0,1.88-0.211,2.632-0.632
+		c0.752-0.422,1.373-1.012,1.863-1.77c0.49-0.757,0.857-1.654,1.102-2.691c0.245-1.036,0.368-2.17,0.368-3.4V384.795z"/>
+	<path class="e-char st11" d="M506.223,394.57c-1.129,0-2.183-0.229-3.162-0.684c-0.98-0.455-1.837-1.091-2.572-1.905
+		c-0.734-0.814-1.313-1.783-1.734-2.905s-0.633-2.355-0.633-3.7v-0.752c0-1.344,0.205-2.583,0.615-3.717s0.966-2.107,1.667-2.923
+		c0.7-0.814,1.521-1.449,2.461-1.905c0.939-0.455,1.944-0.684,3.017-0.684c1.025,0,1.967,0.191,2.828,0.572
+		c0.859,0.382,1.6,0.921,2.222,1.615c0.62,0.695,1.104,1.527,1.452,2.495c0.348,0.969,0.521,2.04,0.521,3.213v1.076h-13.859v0.257
+		v0.752c0,1.151,0.182,2.23,0.547,3.238c0.363,1.009,0.868,1.886,1.512,2.632c0.644,0.747,1.404,1.336,2.281,1.77
+		c0.877,0.433,1.823,0.648,2.838,0.648c0.523,0,1.033-0.039,1.529-0.119c0.495-0.079,0.971-0.216,1.427-0.41
+		c0.456-0.193,0.894-0.453,1.315-0.777c0.422-0.325,0.826-0.737,1.214-1.239l0.649,0.462c-0.308,0.443-0.661,0.849-1.06,1.213
+		c-0.399,0.365-0.853,0.678-1.358,0.939c-0.508,0.263-1.068,0.468-1.684,0.615C507.641,394.496,506.963,394.57,506.223,394.57z
+		 M505.881,376.318c-0.936,0-1.793,0.183-2.572,0.547c-0.781,0.365-1.467,0.869-2.06,1.513s-1.074,1.398-1.444,2.265
+		c-0.37,0.865-0.606,1.8-0.709,2.803h12.886v-0.223c0-0.923-0.146-1.803-0.436-2.641c-0.291-0.837-0.701-1.572-1.23-2.204
+		c-0.53-0.633-1.171-1.134-1.923-1.504S506.803,376.318,505.881,376.318z"/>
+	<path class="t-char st11" d="M521.44,370.362v4.99h4.203v0.94h-4.203v13.125c0,0.809,0.073,1.464,0.222,1.965
+		c0.147,0.502,0.351,0.892,0.606,1.171c0.257,0.279,0.553,0.467,0.889,0.563c0.336,0.098,0.692,0.146,1.068,0.146
+		c0.353,0,0.666-0.014,0.939-0.043c0.273-0.028,0.57-0.065,0.889-0.11l0.154,0.871c-0.126,0.045-0.273,0.079-0.444,0.103
+		c-0.171,0.022-0.348,0.043-0.53,0.06c-0.182,0.018-0.358,0.028-0.529,0.034s-0.313,0.009-0.428,0.009
+		c-0.592,0-1.122-0.074-1.589-0.223c-0.468-0.147-0.863-0.403-1.188-0.769c-0.325-0.364-0.573-0.854-0.743-1.47
+		c-0.172-0.615-0.257-1.385-0.257-2.307v-13.125h-3.418v-0.94h3.418v-4.99H521.44z"/>
+	<path class="o-char st11" d="M529.928,384.239c0-1.355,0.196-2.598,0.59-3.726c0.393-1.128,0.945-2.099,1.657-2.914
+		c0.712-0.814,1.564-1.449,2.555-1.905c0.992-0.455,2.086-0.684,3.281-0.684c1.208,0,2.311,0.229,3.308,0.684
+		c0.996,0.456,1.848,1.091,2.555,1.905c0.706,0.815,1.256,1.786,1.649,2.914c0.393,1.128,0.59,2.37,0.59,3.726v0.718
+		c0,1.356-0.194,2.598-0.582,3.726c-0.387,1.128-0.937,2.1-1.648,2.914c-0.713,0.814-1.564,1.45-2.555,1.905
+		c-0.992,0.455-2.086,0.684-3.281,0.684c-1.208,0-2.311-0.229-3.308-0.684s-1.852-1.091-2.563-1.905s-1.265-1.786-1.657-2.914
+		c-0.394-1.128-0.59-2.369-0.59-3.726V384.239z M530.851,384.957c0,1.105,0.162,2.159,0.487,3.162
+		c0.324,1.002,0.794,1.886,1.409,2.648c0.615,0.764,1.367,1.37,2.256,1.82s1.903,0.675,3.043,0.675c1.127,0,2.133-0.225,3.016-0.675
+		s1.629-1.057,2.239-1.82c0.609-0.763,1.076-1.646,1.401-2.648c0.324-1.003,0.486-2.057,0.486-3.162v-0.718
+		c0-1.082-0.162-2.122-0.486-3.119c-0.325-0.996-0.795-1.88-1.41-2.648c-0.615-0.77-1.367-1.385-2.256-1.846
+		c-0.889-0.462-1.896-0.692-3.025-0.692c-1.127,0-2.136,0.23-3.024,0.692c-0.889,0.461-1.638,1.076-2.247,1.846
+		c-0.61,0.769-1.077,1.652-1.401,2.648c-0.325,0.997-0.487,2.037-0.487,3.119V384.957z"/>
+	<path class="dot-char st11" d="M551.227,393.579c0-0.262,0.092-0.486,0.273-0.675c0.183-0.188,0.404-0.282,0.667-0.282
+		c0.262,0,0.487,0.095,0.675,0.282c0.188,0.188,0.282,0.413,0.282,0.675c0,0.263-0.094,0.485-0.282,0.667
+		c-0.188,0.182-0.413,0.273-0.675,0.273c-0.263,0-0.484-0.092-0.667-0.273C551.318,394.064,551.227,393.842,551.227,393.579z"/>
 </g>
 
 <g class="ibeto-logo">
@@ -1289,12 +1321,40 @@
 		t.to(".innovate-text", 0.5, {opacity:0}, "Scene15");
 		t.to(".tomorrow-text", 0.5, {opacity:0}, "Scene15");
 
+		t.from(".b-char", 0.5, {opacity:0}, "Scene15-=0.3");
+		t.from(".i-char", 0.5, {opacity:0}, "Scene15-=0.3");
+		t.from(".e-char", 0.5, {opacity:0}, "Scene15-=0.3");
+		t.from(".t-char", 0.5, {opacity:0}, "Scene15-=0.3");
+		t.from(".o-char", 0.5, {opacity:0}, "Scene15-=0.3");
+		t.from(".dot-char", 0.5, {opacity:0}, "Scene15-=0.3");
+
+		TweenMax.set(".i-char", {x:"-=201.5"});
+		TweenMax.set(".b-char", {x:"+=8.3"});
+		TweenMax.set(".e-char", {x:"+=8.5"});
+		TweenMax.set(".t-char", {x:"+=66.5"});
+		TweenMax.set(".o-char", {x:"+=65"});
+		TweenMax.set(".dot-char", {x:"+=181.5"});
+
+		t.to(".i-char", 0.5, {x:"+=201.5"}, "Scene15+=0.4");
+		t.to(".b-char", 0.5, {x:"-=8.3"}, "Scene15+=0.4");
+		t.to(".e-char", 0.5, {x:"-=8.5"}, "Scene15+=0.4");
+		t.to(".t-char", 0.5, {x:"-=66.5"}, "Scene15+=0.4");
+		t.to(".o-char", 0.5, {x:"-=65"}, "Scene15+=0.4");
+		t.to(".dot-char", 0.5, {x:"-=181.5"}, "Scene15+=0.4");
 
 
-		t.addLabel("Scene16", "-=0.5");
+		t.addLabel("Scene16", "+=1");
 
 
-		TweenMax.set(".ibeto-logo", {scale:0.32, y:"-=220", x:"-=370", transformOrigin:"center center"});
+		t.to(".i-char", 0.3, {opacity:0}, "Scene16");
+		t.to(".b-char", 0.3, {opacity:0}, "Scene16");
+		t.to(".e-char", 0.3, {opacity:0}, "Scene16");
+		t.to(".t-char", 0.3, {opacity:0}, "Scene16");
+		t.to(".o-char", 0.3, {opacity:0}, "Scene16");
+		t.to(".dot-char", 0.3, {opacity:0}, "Scene16");
+
+
+		TweenMax.set(".ibeto-logo", {scale:0.28, y:"-=220", x:"-=370", transformOrigin:"center center"});
 
 		t.from(".ibeto-logo", 1, {opacity:0}, "Scene16");
 
@@ -1302,28 +1362,12 @@
 		t.staggerFrom(".ibeto-letters>*", 0.5, {scale:0.6, opacity:0, transformOrigin:"bottom center"}, 0.1, "Scene16");
 		t.from(".tagline", 1, {y:"+=20", opacity:0}, "Scene16");
 
-		t.staggerFrom(".down-arrows>*", 0.6, {opacity:0, repeat:-1, repeatDelay:2, ease: CustomEase.create("custom", "M0,0,C0,0.398,0.3,1,0.5,1,0.702,1,1,0.402,1,0")}, 0.25, "Scene16+=2.2");
 
-		t.from(".logo", 0.5, {opacity:0, y:"+=20"}, "Scene16+=1.5");
 
 		t.play("Scene1");
 
 
-		document.querySelector("body").style.opacity = "1";
-
-		logoResize();
-		window.addEventListener('resize', logoResize, true);
-
-		function logoResize() {
-			var width = document.body.clientWidth;
-			if(width > 1024) {
-				width = 1024;
-			}
-			document.querySelector(".excel-logo").style.width = width/5+"px";
-			document.querySelector(".excel-logo").style.height = width/5+"px";
-			document.querySelector(".mec-logo").style.width = width/5.3+"px";
-			document.querySelector(".mec-logo").style.height = width/5.3+"px";
-		}
+		document.querySelector("svg").style.opacity = "1";
 
 
 		function fadeAndOut(elements) {
