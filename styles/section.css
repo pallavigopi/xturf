@@ -340,6 +340,10 @@ p, ol, ul{
     animation: shake 0.15s linear infinIte;
 }
 
+.contact-slide .section-content{
+    padding-bottom: 150px;
+}
+
 .contact-card{
     text-align: left;
     display: inline-block;
@@ -364,6 +368,68 @@ p, ol, ul{
     display: inline-block;
     vertical-align: middle;
 }
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background: #151515;
+    line-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 45px;
+}
+
+.social{
+    font-size: 3rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.social .fab{
+    background: #636363;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin: 0px 1rem;
+}
+
+.social .fa-facebook-square:hover{
+    background: #3b5998;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.social .fa-youtube:hover{
+    background: #cc181e;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social .fa-instagram:hover{
+    background: linear-gradient(45deg, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bottom-logos{
+    vertical-align: middle;
+    width: auto;
+    height: 100px;
+    margin-top: 25px;
+}
+
+/* .excel{
+    float: left;
+}
+
+.mec{
+    float: right;
+} */
 
 .ui-loader{
     display: none;
