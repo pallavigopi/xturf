@@ -340,6 +340,10 @@ p, ol, ul{
     animation: shake 0.15s linear infinIte;
 }
 
+.contact-cards-group{
+    display: inline-block;
+}
+
 .contact-card{
     text-align: left;
     display: inline-block;
