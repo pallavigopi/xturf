@@ -1305,7 +1305,9 @@
 		t.staggerFrom(".ibeto-letters>*", 0.5, {scale:0.6, opacity:0, transformOrigin:"bottom center"}, 0.1, "Scene16");
 		t.from(".tagline", 1, {y:"+=20", opacity:0}, "Scene16");
 
-		t.from(".logo", 0.5, {opacity:0, y:"+=20"}, "Scene16+=1.5");
+		t.from(".logo", 0.5, {opacity:0, y:"+=20", onComplete: function() {
+			console.log("Animation done");
+		}}, "Scene16+=1.5");
 
 		if (document.cookie.indexOf("visited") >= 0) {
 			t.staggerFrom(".down-arrows>*", 0.6, {opacity:0, repeat:-1, repeatDelay:2, ease: CustomEase.create("custom", "M0,0,C0,0.398,0.3,1,0.5,1,0.702,1,1,0.402,1,0")}, 0.25, "Scene1");
@@ -1314,7 +1316,7 @@
 			document.cookie = "visited";
 		}
 
-		t.play("Scene1");
+		t.play("Scene14");
 
 
 		document.querySelector("body").style.opacity = "1";
