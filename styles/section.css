@@ -75,6 +75,7 @@ body{
     vertical-align: middle;
     line-height: 2em;
     color: #fff;
+    fill: #215e71;
     cursor: pointer;
 }
 
@@ -92,6 +93,21 @@ body{
 
 .floating-nav.bright ul.nav-container li i{
     color: #eee; 
+}
+
+.floating-nav ul.nav-container .ibeto-nav-icon{
+    line-height: unset;
+    vertical-align: middle;
+    transition: color 0.3s ease-in-out, fill 0.3s ease-in-out;
+    width: 1.15rem;
+}
+
+.floating-nav.bright ul.nav-container .ibeto-nav-icon{
+    fill: #215e71;
+}
+
+.floating-nav.bright ul.nav-container .ibeto-nav-icon{
+    fill: #eee;
 }
 
 @media only screen and (max-width:600px){
@@ -211,8 +227,8 @@ p, ol, ul{
     margin: 0% 4%;
 }
 
-.all-logos{
-    width:100%;
+.ibeto-logo{
+    width: 80%;
     height: auto;
 }
 
@@ -392,8 +408,6 @@ p, ol, ul{
 .contact-cards-group{
     display: block;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
 }
 
 .contact-card{
@@ -401,7 +415,7 @@ p, ol, ul{
     display: inline-block;
     margin: 30px auto;
     width: 100%;
-    max-width: 470px;
+    max-width: 600px;
 }
 
 .contact-card p{
@@ -504,6 +518,11 @@ p, ol, ul{
     .contact-card{
         margin: 30px auto;
         width: 100%;
+    }
+
+    .contact-card p{
+        font-size: 1.4rem;
+        line-height: 1.8rem;
     }
 }
 
