@@ -130,6 +130,10 @@ a.mec-logo-overlay{
     fill: #eee;
 }
 
+.step-desc > p{
+    padding-right:10px;
+}
+
 @media only screen and (max-width:600px){
     body{
         overflow: auto;
