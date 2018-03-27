@@ -191,7 +191,7 @@ h1{
 }
 
 p, ol, ul{
-    transition: transform 0.4s ease-out 1.6s, opacity 0.5s ease-out 1.6s;
+    transition: transform 0.8s ease-in-out 1.6s, opacity 0.8s ease-in-out 1.6s;
     font-family: Ubuntu;
     font-size: 1rem;
     letter-spacing: 0.1px;
