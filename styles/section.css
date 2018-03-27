@@ -251,6 +251,7 @@ p, ol, ul{
     display: inline-block;
     vertical-align: middle;
     margin: 0% 4%;
+    position: relative;
 }
 
 .ibeto-logo{
@@ -360,6 +361,13 @@ p, ol, ul{
         height: auto;
         vertical-align: top;
     }
+}
+
+.hack-table-overlay{
+    width:100%;
+    position: absolute;
+    top: 0px;
+    height: 100%;
 }
 
 .hack-table{
