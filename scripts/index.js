@@ -97,3 +97,24 @@ for(var i=0 ; i<dates.length ; i++){
         else
                 dateobj.find(".far").remove();
 }
+
+
+// Adjusting animation overlay link box sizes
+logoResize();
+window.addEventListener('resize', logoResize, true);
+
+function logoResize() {
+    var width = real_width = document.body.clientWidth;
+    if(real_width > 800) {
+        width = 800;
+    }
+    document.querySelector(".excel-logo-overlay").style.width = width/5+"px";
+    document.querySelector(".excel-logo-overlay").style.height = width/5+"px";
+
+    document.querySelector(".arrow-logo-overlay").style.width = width/5+"px";
+    document.querySelector(".arrow-logo-overlay").style.height = width/10+"px";
+    document.querySelector(".arrow-logo-overlay").style.left = real_width/2 - width/10 + "px";
+
+    document.querySelector(".mec-logo-overlay").style.width = width/5.3+"px";
+    document.querySelector(".mec-logo-overlay").style.height = width/5.3+"px";
+}

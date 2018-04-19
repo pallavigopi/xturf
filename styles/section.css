@@ -31,8 +31,18 @@ a.excel-logo-overlay{
     height: 120px;
     width: 120px;
     z-index: 1000;
-    margin-left: 4%;
-    margin-top: 2%;
+    left: 2%;
+    top: 2%;
+}
+
+a.arrow-logo-overlay{
+    display: block;
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    z-index: 1000;
+    left: 50%;
+    top: 2%;
 }
 
 a.mec-logo-overlay{
@@ -41,8 +51,8 @@ a.mec-logo-overlay{
     height: 120px;
     width: 120px;
     z-index: 1000;
-    margin-right: 4%;
-    margin-top: 2%;
+    right: 2%;
+    top: 2%;
     right: 0;
 }
 
