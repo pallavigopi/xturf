@@ -24,6 +24,7 @@
 	<script type="text/javascript" src="MorphSVGPlugin.min.js"></script>
 
 	<img class="logo excel-logo" src="excel-logo.png" style="position:absolute; left:2%; top:2%;">
+	<img class="logo arrow-logo" src="arrow-logo.png" style="position:absolute; left:50%; top:2%;">
 	<img class="logo mec-logo" src="mec-logo.png" style="position:absolute; right:2%; top:2%;">
 
 
@@ -1315,12 +1316,17 @@
 
 
 		function logoResize() {
-			var width = document.body.clientWidth;
-			if(width > 800) {
+			var width = real_width = document.body.clientWidth;
+			if(real_width > 800) {
 				width = 800;
 			}
 			document.querySelector(".excel-logo").style.width = width/5+"px";
 			document.querySelector(".excel-logo").style.height = width/5+"px";
+
+			document.querySelector(".arrow-logo").style.width = width/5+"px";
+			document.querySelector(".arrow-logo").style.height = width/10+"px";
+			document.querySelector(".arrow-logo").style.left = real_width/2 - width/10 + "px";
+
 			document.querySelector(".mec-logo").style.width = width/5.3+"px";
 			document.querySelector(".mec-logo").style.height = width/5.3+"px";
 		}
