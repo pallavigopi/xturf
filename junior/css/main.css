@@ -96,8 +96,9 @@ section .title h2 {
     color: #343434;
 }
 
-.rules a {
+.rules .btn {
     margin-top: 60px;
+    white-space: normal;
 }
 
 #contact-section {
