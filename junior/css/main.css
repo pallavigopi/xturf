@@ -159,3 +159,8 @@ section .title h2 {
 .details span {
     width: 1.5em;
 }
+
+.event-grid span.glyphicon-file::before{
+    position: relative;
+    left: 2px;
+}
